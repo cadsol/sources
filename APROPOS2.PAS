@@ -125,6 +125,7 @@ var
   Year, Month, Day: word;
 
 begin
+
   Caption := 'A propos de ' + Application.Title;
   DecodeDate(FileDateToDateTime(fileage(paramStr(0))), Year, Month, Day);
   DateCreationLb.Caption := IntToStr(Day) + ' / ' + IntToStr(Month) + ' / ' +IntToStr(Year);
